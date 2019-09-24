@@ -27,7 +27,8 @@ function lps(str, i ,j){
 function lpsDP(str){
   let n = str.length;
   let i, j , c1;
-  let L = new Array(n).fill(new Array(n).fill(1));
+  //let L = new Array(n).fill(new Array(n).fill(1));
+  let L = new Array(n).fill().map(()=> new Array(n).fill(1));
   for(i = 0; i < n; i++)
     L[i][i] = 1;
 

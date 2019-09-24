@@ -1,4 +1,4 @@
-findMinimumCoinsForSum([1,3,5],11);
+findMinimumCoinsForSum([1,3,5],4);
 
 function findMinimumCoinsForSum(coins, sum){
    let minSumArr = new Array(sum + 1).fill(Number.MAX_SAFE_INTEGER);

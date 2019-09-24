@@ -7,8 +7,12 @@ for(let i =1; i < arr.length; i++){
    if(arr[i] > arr[j] && lis[i] < lis[j] + 1) {
       lis[i] = lis[j] + 1;
    }
+
+
 }
 return lis;
 }
-
- console.log(findLongIncrSeq([10, 22, 9, 33, 21, 50, 41, 60, 80]));  
+Array.prototype.toString = function(){
+    return this.join(' ')
+}
+ console.log(findLongIncrSeq([10, 22, 9, 33, 21, 50, 41, 60, 8]));  
